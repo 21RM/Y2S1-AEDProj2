@@ -1,0 +1,306 @@
+\hypertarget{classVertex}{}\doxysection{Vertex Class Reference}
+\label{classVertex}\index{Vertex@{Vertex}}
+
+
+Represents a vertex in the graph with auxiliary fields and methods.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVertex_ae2f4457998996cf77127f3f5a2737c93}{Vertex}} (\mbox{\hyperlink{classAirport}{Airport}} in)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classVertex}{Vertex}} object with the given airport information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAirport}{Airport}} \& \mbox{\hyperlink{classVertex_a1f9c1ff416599c43a53ec8fc619b8284}{get\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Gets the airport information of the vertex. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAirport}{Airport}} \mbox{\hyperlink{classVertex_a067ae9a9e0b3116325e3ceaaf5bc594b}{get\+Info}} () const
+\begin{DoxyCompactList}\small\item\em Gets the constant airport information of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_ad98f347fdcf0ec1de304434f8f2de864}{set\+Info}} (\mbox{\hyperlink{classAirport}{Airport}} in)
+\begin{DoxyCompactList}\small\item\em Sets the airport information of the vertex. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classVertex_aa4bd82105b85ee53a917391f4811cd8a}{is\+Visited}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the vertex has been visited. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_a3c6d6c2254850a647d3a27007ef940f6}{set\+Visited}} (bool v)
+\begin{DoxyCompactList}\small\item\em Sets the visit status of the vertex. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classVertex_a126e306f0534b99cd97aa864fdb243d4}{is\+Processing}} () const
+\begin{DoxyCompactList}\small\item\em Checks if the vertex is currently being processed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_a4427952db4781f61eb336fe5965da708}{set\+Processing}} (bool p)
+\begin{DoxyCompactList}\small\item\em Sets the processing status of the vertex. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $>$ \& \mbox{\hyperlink{classVertex_a25cb5b7136d1a53fcf2ccd437ea95641}{get\+Adj}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of outgoing edges from the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_a85a2d5fe16da007e4a3fd13763e9bbff}{set\+Adj}} (const std\+::vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $>$ \&adj)
+\begin{DoxyCompactList}\small\item\em Sets the list of outgoing edges for the vertex. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVertex_afd1d78d4b08162c2c470db5c7b1386f6}{get\+Indegree}} () const
+\begin{DoxyCompactList}\small\item\em Gets the indegree of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_a15d5d88e6de6faccfa17d8c02753072f}{set\+Indegree}} (int indegree)
+\begin{DoxyCompactList}\small\item\em Sets the indegree of the vertex. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVertex_af65c843649e89097b38e8d108327c34a}{get\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Gets the numerical value of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_aa691c9e7724f31dc397ba653eb061d34}{set\+Num}} (int num)
+\begin{DoxyCompactList}\small\item\em Sets the numerical value of the vertex. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVertex_a7acb7c0857c03cf23db677ad3618a04e}{get\+Low}} () const
+\begin{DoxyCompactList}\small\item\em Gets the low value of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVertex_a390911b126aee6bcf85a4b2e9921a421}{set\+Low}} (int low)
+\begin{DoxyCompactList}\small\item\em Sets the low value of the vertex. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classVertex_aabb922c2287f2f5736abdedf0e60a808}{get\+Num\+Different\+Airlines}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of different airlines associated with outgoing edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVertex_afab89afd724f1b07b1aaad6bdc61c47a}\label{classVertex_afab89afd724f1b07b1aaad6bdc61c47a}} 
+class {\bfseries Graph}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a vertex in the graph with auxiliary fields and methods. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVertex_ae2f4457998996cf77127f3f5a2737c93}\label{classVertex_ae2f4457998996cf77127f3f5a2737c93}} 
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{Vertex()}{Vertex()}}
+{\footnotesize\ttfamily Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAirport}{Airport}}}]{in }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classVertex}{Vertex}} object with the given airport information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVertex_a25cb5b7136d1a53fcf2ccd437ea95641}\label{classVertex_a25cb5b7136d1a53fcf2ccd437ea95641}} 
+\index{Vertex@{Vertex}!getAdj@{getAdj}}
+\index{getAdj@{getAdj}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getAdj()}{getAdj()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $>$ \& Vertex\+::get\+Adj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of outgoing edges from the vertex. 
+
+\begin{DoxyReturn}{Returns}
+List of outgoing edges. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_afd1d78d4b08162c2c470db5c7b1386f6}\label{classVertex_afd1d78d4b08162c2c470db5c7b1386f6}} 
+\index{Vertex@{Vertex}!getIndegree@{getIndegree}}
+\index{getIndegree@{getIndegree}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getIndegree()}{getIndegree()}}
+{\footnotesize\ttfamily int Vertex\+::get\+Indegree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the indegree of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+Indegree of the vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_a1f9c1ff416599c43a53ec8fc619b8284}\label{classVertex_a1f9c1ff416599c43a53ec8fc619b8284}} 
+\index{Vertex@{Vertex}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAirport}{Airport}} \& Vertex\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the airport information of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAirport}{Airport}} information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_a067ae9a9e0b3116325e3ceaaf5bc594b}\label{classVertex_a067ae9a9e0b3116325e3ceaaf5bc594b}} 
+\index{Vertex@{Vertex}!getInfo@{getInfo}}
+\index{getInfo@{getInfo}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getInfo()}{getInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAirport}{Airport}} Vertex\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the constant airport information of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+Constant airport information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_a7acb7c0857c03cf23db677ad3618a04e}\label{classVertex_a7acb7c0857c03cf23db677ad3618a04e}} 
+\index{Vertex@{Vertex}!getLow@{getLow}}
+\index{getLow@{getLow}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getLow()}{getLow()}}
+{\footnotesize\ttfamily int Vertex\+::get\+Low (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the low value of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+Low value of the vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_af65c843649e89097b38e8d108327c34a}\label{classVertex_af65c843649e89097b38e8d108327c34a}} 
+\index{Vertex@{Vertex}!getNum@{getNum}}
+\index{getNum@{getNum}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getNum()}{getNum()}}
+{\footnotesize\ttfamily int Vertex\+::get\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the numerical value of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+Numerical value of the vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_aabb922c2287f2f5736abdedf0e60a808}\label{classVertex_aabb922c2287f2f5736abdedf0e60a808}} 
+\index{Vertex@{Vertex}!getNumDifferentAirlines@{getNumDifferentAirlines}}
+\index{getNumDifferentAirlines@{getNumDifferentAirlines}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{getNumDifferentAirlines()}{getNumDifferentAirlines()}}
+{\footnotesize\ttfamily size\+\_\+t Vertex\+::get\+Num\+Different\+Airlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of different airlines associated with outgoing edges. 
+
+\begin{DoxyReturn}{Returns}
+Number of different airlines. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_a126e306f0534b99cd97aa864fdb243d4}\label{classVertex_a126e306f0534b99cd97aa864fdb243d4}} 
+\index{Vertex@{Vertex}!isProcessing@{isProcessing}}
+\index{isProcessing@{isProcessing}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{isProcessing()}{isProcessing()}}
+{\footnotesize\ttfamily bool Vertex\+::is\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the vertex is currently being processed. 
+
+\begin{DoxyReturn}{Returns}
+True if the vertex is being processed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_aa4bd82105b85ee53a917391f4811cd8a}\label{classVertex_aa4bd82105b85ee53a917391f4811cd8a}} 
+\index{Vertex@{Vertex}!isVisited@{isVisited}}
+\index{isVisited@{isVisited}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{isVisited()}{isVisited()}}
+{\footnotesize\ttfamily bool Vertex\+::is\+Visited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if the vertex has been visited. 
+
+\begin{DoxyReturn}{Returns}
+True if the vertex has been visited, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVertex_a85a2d5fe16da007e4a3fd13763e9bbff}\label{classVertex_a85a2d5fe16da007e4a3fd13763e9bbff}} 
+\index{Vertex@{Vertex}!setAdj@{setAdj}}
+\index{setAdj@{setAdj}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setAdj()}{setAdj()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Adj (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classEdge}{Edge}} $>$ \&}]{adj }\end{DoxyParamCaption})}
+
+
+
+Sets the list of outgoing edges for the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adj} & List of outgoing edges to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_a15d5d88e6de6faccfa17d8c02753072f}\label{classVertex_a15d5d88e6de6faccfa17d8c02753072f}} 
+\index{Vertex@{Vertex}!setIndegree@{setIndegree}}
+\index{setIndegree@{setIndegree}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setIndegree()}{setIndegree()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Indegree (\begin{DoxyParamCaption}\item[{int}]{indegree }\end{DoxyParamCaption})}
+
+
+
+Sets the indegree of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indegree} & New indegree value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_ad98f347fdcf0ec1de304434f8f2de864}\label{classVertex_ad98f347fdcf0ec1de304434f8f2de864}} 
+\index{Vertex@{Vertex}!setInfo@{setInfo}}
+\index{setInfo@{setInfo}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setInfo()}{setInfo()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAirport}{Airport}}}]{in }\end{DoxyParamCaption})}
+
+
+
+Sets the airport information of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & New airport information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_a390911b126aee6bcf85a4b2e9921a421}\label{classVertex_a390911b126aee6bcf85a4b2e9921a421}} 
+\index{Vertex@{Vertex}!setLow@{setLow}}
+\index{setLow@{setLow}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setLow()}{setLow()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Low (\begin{DoxyParamCaption}\item[{int}]{low }\end{DoxyParamCaption})}
+
+
+
+Sets the low value of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em low} & New low value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_aa691c9e7724f31dc397ba653eb061d34}\label{classVertex_aa691c9e7724f31dc397ba653eb061d34}} 
+\index{Vertex@{Vertex}!setNum@{setNum}}
+\index{setNum@{setNum}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setNum()}{setNum()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Num (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the numerical value of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & New numerical value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_a4427952db4781f61eb336fe5965da708}\label{classVertex_a4427952db4781f61eb336fe5965da708}} 
+\index{Vertex@{Vertex}!setProcessing@{setProcessing}}
+\index{setProcessing@{setProcessing}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setProcessing()}{setProcessing()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Processing (\begin{DoxyParamCaption}\item[{bool}]{p }\end{DoxyParamCaption})}
+
+
+
+Sets the processing status of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Processing status to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVertex_a3c6d6c2254850a647d3a27007ef940f6}\label{classVertex_a3c6d6c2254850a647d3a27007ef940f6}} 
+\index{Vertex@{Vertex}!setVisited@{setVisited}}
+\index{setVisited@{setVisited}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{setVisited()}{setVisited()}}
+{\footnotesize\ttfamily void Vertex\+::set\+Visited (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets the visit status of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Visit status to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+h\item 
+Graph.\+cpp\end{DoxyCompactItemize}

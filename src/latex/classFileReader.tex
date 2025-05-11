@@ -1,0 +1,61 @@
+\hypertarget{classFileReader}{}\doxysection{File\+Reader Class Reference}
+\label{classFileReader}\index{FileReader@{FileReader}}
+
+
+A class for reading data from a file and storing it in a vector of vectors of strings.  
+
+
+
+
+{\ttfamily \#include $<$File\+Reader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileReader_a2624ff4a5c9489390250ecc52a37feca}{File\+Reader}} (const std\+::string \&f\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classFileReader}{File\+Reader}} class. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classFileReader_a5c7f0cf3adfe067e66d787444bdbcf32}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the data read from the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for reading data from a file and storing it in a vector of vectors of strings. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFileReader_a2624ff4a5c9489390250ecc52a37feca}\label{classFileReader_a2624ff4a5c9489390250ecc52a37feca}} 
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{FileReader()}{FileReader()}}
+{\footnotesize\ttfamily File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{f\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classFileReader}{File\+Reader}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Name} & The name of the file to be opened for reading. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFileReader_a5c7f0cf3adfe067e66d787444bdbcf32}\label{classFileReader_a5c7f0cf3adfe067e66d787444bdbcf32}} 
+\index{FileReader@{FileReader}!getData@{getData}}
+\index{getData@{getData}!FileReader@{FileReader}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ File\+Reader\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the data read from the file. 
+
+\begin{DoxyReturn}{Returns}
+Vector of vectors containing the read data, where each inner vector represents a row of strings. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+File\+Reader.\+h\item 
+File\+Reader.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{classEdge}{}\doxysection{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+
+
+Represents an edge in the graph connecting two vertices with weight and airline information.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdge_a23d5b5332d930167c8bccd787f688964}{Edge}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$ d, double w, const \mbox{\hyperlink{classAirline}{Airline}} \&airline)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classEdge}{Edge}} object with the specified destination, weight, and airline. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$ \mbox{\hyperlink{classEdge_a8dfa6665f7d51ad79298e7a0e06c083a}{get\+Dest}} () const
+\begin{DoxyCompactList}\small\item\em Gets the destination vertex of the edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a1d66624c860b716e273c02cf421dc446}{set\+Dest}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$ dest)
+\begin{DoxyCompactList}\small\item\em Sets the destination vertex of the edge. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEdge_a1caaffca117bab3ff5b7387623a356f8}{get\+Weight}} () const
+\begin{DoxyCompactList}\small\item\em Gets the weight of the edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a452013a3525db6e2dbbbcb614acf728b}{set\+Weight}} (double weight)
+\begin{DoxyCompactList}\small\item\em Sets the weight of the edge. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classAirline}{Airline}} \& \mbox{\hyperlink{classEdge_aca8bf2fc940eace9791367c40ef35216}{get\+Airline}} () const
+\begin{DoxyCompactList}\small\item\em Gets the airline associated with the edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEdge_afab89afd724f1b07b1aaad6bdc61c47a}\label{classEdge_afab89afd724f1b07b1aaad6bdc61c47a}} 
+class {\bfseries Graph}
+\item 
+\mbox{\Hypertarget{classEdge_a1251d18f08324022e8e73506c3768f3c}\label{classEdge_a1251d18f08324022e8e73506c3768f3c}} 
+class {\bfseries Vertex}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an edge in the graph connecting two vertices with weight and airline information. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdge_a23d5b5332d930167c8bccd787f688964}\label{classEdge_a23d5b5332d930167c8bccd787f688964}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$}]{d,  }\item[{double}]{w,  }\item[{const \mbox{\hyperlink{classAirline}{Airline}} \&}]{airline }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classEdge}{Edge}} object with the specified destination, weight, and airline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Destination vertex of the edge. \\
+\hline
+{\em w} & \mbox{\hyperlink{classEdge}{Edge}} weight. \\
+\hline
+{\em airline} & \mbox{\hyperlink{classAirline}{Airline}} associated with the edge. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdge_aca8bf2fc940eace9791367c40ef35216}\label{classEdge_aca8bf2fc940eace9791367c40ef35216}} 
+\index{Edge@{Edge}!getAirline@{getAirline}}
+\index{getAirline@{getAirline}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getAirline()}{getAirline()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classAirline}{Airline}} \& Edge\+::get\+Airline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the airline associated with the edge. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classAirline}{Airline}} associated with the edge. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a8dfa6665f7d51ad79298e7a0e06c083a}\label{classEdge_a8dfa6665f7d51ad79298e7a0e06c083a}} 
+\index{Edge@{Edge}!getDest@{getDest}}
+\index{getDest@{getDest}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$ Edge\+::get\+Dest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the destination vertex of the edge. 
+
+\begin{DoxyReturn}{Returns}
+Destination vertex of the edge. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a1caaffca117bab3ff5b7387623a356f8}\label{classEdge_a1caaffca117bab3ff5b7387623a356f8}} 
+\index{Edge@{Edge}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily double Edge\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the weight of the edge. 
+
+\begin{DoxyReturn}{Returns}
+Weight of the edge. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a1d66624c860b716e273c02cf421dc446}\label{classEdge_a1d66624c860b716e273c02cf421dc446}} 
+\index{Edge@{Edge}!setDest@{setDest}}
+\index{setDest@{setDest}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setDest()}{setDest()}}
+{\footnotesize\ttfamily void Edge\+::set\+Dest (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVertex}{Vertex}} $>$}]{dest }\end{DoxyParamCaption})}
+
+
+
+Sets the destination vertex of the edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & New destination vertex to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_a452013a3525db6e2dbbbcb614acf728b}\label{classEdge_a452013a3525db6e2dbbbcb614acf728b}} 
+\index{Edge@{Edge}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Edge@{Edge}}
+\doxysubsubsection{\texorpdfstring{setWeight()}{setWeight()}}
+{\footnotesize\ttfamily void Edge\+::set\+Weight (\begin{DoxyParamCaption}\item[{double}]{weight }\end{DoxyParamCaption})}
+
+
+
+Sets the weight of the edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weight} & New weight to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+h\item 
+Graph.\+cpp\end{DoxyCompactItemize}
